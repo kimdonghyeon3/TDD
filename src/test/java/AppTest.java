@@ -52,4 +52,22 @@ public class AppTest {
         assertEquals(15, rs);
     }
 
+    @Test
+    public void 사칙연산_2(){
+        int rs = Calculator.operation("10 + 10 * 5");
+        assertEquals(60, rs);
+    }
+
+    @Test
+    public void 사칙연산_3(){
+        int rs = Calculator.operation("(1 + 2) * 3");
+        assertEquals(9, rs);
+    }
+
+    @Test
+    public void 사칙연산_4(){
+        int rs = Calculator.operation("(10 + 20) * 30 + (50 * 60 + (20 / 10))");
+        assertEquals(3902, rs);
+    }
+
 }

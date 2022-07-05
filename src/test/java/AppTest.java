@@ -46,4 +46,10 @@ public class AppTest {
         assertEquals(2, rs);
     }
 
+    @Test
+    public void 사칙연산(){
+        int rs = Calculator.operation("10 + 10 - 5");
+        assertEquals(15, rs);
+    }
+
 }
